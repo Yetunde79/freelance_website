@@ -1,0 +1,51 @@
+@import "variables";
+
+.service_text {
+  width: 80%;
+  padding-left: 10%;
+  text-align: center;
+}
+
+.packages {
+  @include slanted_left;
+  .grid {
+    grid-template-columns: minmax(200px, 300px) minmax(200px, 300px) minmax(
+        200px,
+        300px
+      );
+    gap: 30px;
+    text-align: center;
+  }
+  &:before {
+    @include slanted_left_before;
+  }
+}
+
+#development {
+  text-align: left;
+  padding-bottom: 3%;
+}
+
+.custom {
+  padding: 0 5%;
+
+  &.grid {
+    grid-template-columns: minmax(100px, 200px) minmax(100px, 200px) minmax(
+        100px,
+        200px
+      );
+  }
+}
+
+.section_padding {
+  padding: 0 5%;
+}
+
+.process {
+  .process-inline {
+    display: flex;
+  }
+  div {
+    padding: 0 3%;
+  }
+}

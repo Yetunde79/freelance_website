@@ -1,0 +1,30 @@
+$lightpurple: #bd6bd3;
+$midpurple: #9c53d9;
+$darkpurple: #322344;
+$purpleblue: #695e9e;
+$blue: #695e9e;
+$grey: #f2f2f2;
+$white: #ffffff;
+
+@mixin slanted_left {
+  background-color: $midpurple;
+  position: relative;
+  z-index: 1;
+  padding-top: 2%;
+  padding-bottom: 7%;
+  margin-top: 10%;
+}
+
+@mixin slanted_left_before {
+  background: inherit;
+  position: absolute;
+  height: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: block;
+  content: " ";
+  z-index: -1;
+  transform: skewY(3deg);
+  transform-origin: 100% 0;
+}
