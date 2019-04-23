@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Header from "../layout/Header";
-import Footer from "../layout/Footer";
 
 export default class Projects extends Component {
   render() {
@@ -21,7 +20,7 @@ export default class Projects extends Component {
               <div>Shopify</div>
               <div>Fylo</div>
             </div>
-            <button>More Projects</button>
+            <button className="btn">More Projects</button>
           </section>
         </main>
       </div>

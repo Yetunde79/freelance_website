@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../stylesheets/App.scss";
 
 export default function Footer() {
@@ -12,40 +13,52 @@ export default function Footer() {
 
         <div>
           <ul>
-            <li>HOME</li>
-            <li>PROJECTS</li>
-            <li>SERVICES</li>
-            <li>ARTICLES</li>
-            <li>CONTACT</li>
+            <li>
+              <Link to="/">HOME</Link>
+            </li>
+            <li>
+              <Link to="/projects">PROJECTS</Link>
+            </li>
+            <li>
+              <Link to="/services">SERVICES</Link>
+            </li>
+            {/* <li>
+              <Link to="/articles">ARTICLES</Link>
+            </li> */}
+            <li>
+              <Link to="/contact">CONTACT</Link>
+            </li>
           </ul>
         </div>
 
         <div className="footer-social">
           <ul>
             <li>
-              <a href="#">
-                <i className="fab fa-linkedin-in" />
+              <a id="li" href="https://www.linkedin.com/in/yetundeadebayo/">
+                <i className="fab fa-linkedin-in fa-2x" />
               </a>
             </li>
             <li>
-              <a href="#">
-                <i className="fab fa-medium-m" />
+              <a id="medium" href="https://medium.com/@ysolaadebayo">
+                <i className="fab fa-medium-m fa-2x" />
               </a>
             </li>
             <li>
-              <a href="#">
-                <i className="fab fa-github" />
+              <a id="github" href="https://github.com/Yetunde79">
+                <i className="fab fa-github fa-2x" />
               </a>
             </li>
             <li>
-              <a href="#">
-                <i className="fab fa-twitter" />
+              <a id="twitter" href="https://twitter.com/yetunde_sola">
+                <i className="fab fa-twitter fa-2x" />
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <p id="made_by">Made with 3 by Yetunde</p>
+      <p id="made_by">
+        Made with <i className="fas fa-heart" id="heart" /> by Yetunde
+      </p>
     </footer>
   );
 }

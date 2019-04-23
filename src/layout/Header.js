@@ -20,9 +20,9 @@ export default function Header(props) {
           <li>
             <NavLink to="/services">Services</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/articles">Articles</NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/contact">Contact</NavLink>
           </li>

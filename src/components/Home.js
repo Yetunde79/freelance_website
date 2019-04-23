@@ -1,8 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import logo from "../images/logo.png";
-import Footer from "../layout/Footer";
 
 import "../stylesheets/App.scss";
 import "../stylesheets/Home.scss";
@@ -30,9 +29,9 @@ export default function Home() {
             <li>
               <NavLink to="/services">Services</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/articles">Articles</NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to="/contact">Contact</NavLink>
             </li>
@@ -42,8 +41,8 @@ export default function Home() {
           <h1 className="heading">{header.heading}</h1>
           <h4>{header.subheading}</h4>
 
-          <button>
-            <a href="#">LET'S WORK TOGETHER</a>
+          <button className="btn">
+            <Link href="/services">LET'S WORK TOGETHER</Link>
           </button>
         </section>
       </header>

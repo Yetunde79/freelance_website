@@ -70,13 +70,13 @@ nav {
   padding-top: 2%;
 }
 
-button {
+.btn {
   background-color: $midpurple;
   padding: 10px;
   border-radius: 12px;
 }
 
-button a {
+.btn a {
   font-size: 12px;
 }
 
@@ -92,7 +92,8 @@ main {
 footer {
   flex-shrink: 0;
   background-color: $lightpurple;
-  padding: 0 7%;
+  padding: 2% 7%;
+  color: white;
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -101,18 +102,49 @@ footer {
     }
   }
 
+  #heart {
+    color: red;
+    padding: 0 3px;
+  }
+
   ul li {
     list-style: none;
     padding-bottom: 15px;
   }
 
-  .footer-social li {
-    display: inline-block;
-    padding: 5%;
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: $aqua;
+  }
+
+  .footer-social {
+    a {
+      color: black;
+    }
+    li {
+      display: inline-block;
+      padding: 5%;
+    }
+    #li:hover {
+      color: #0077b5;
+    }
+    #medium:hover {
+      color: #00ab6b;
+    }
+    #github:hover {
+      color: #333;
+    }
+    #twitter:hover {
+      color: #55acee;
+    }
   }
 
   #made_by {
     margin: 0;
+    padding-top: 25px;
   }
 }
 footer > p {
