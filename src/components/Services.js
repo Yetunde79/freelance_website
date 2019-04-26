@@ -27,18 +27,37 @@ class Services extends Component {
             exactly the way you envision.
           </section>
 
+          <section className=" centered">
+            <h3 id="development">
+              Website Development and Redevelopment Packages
+            </h3>
+
+            <div className="package_type">
+              <div>
+                <div>
+                  <h4>BASIC</h4>
+                  <hr />
+                </div>
+                <div>
+                  <h5>1-3 pages</h5>
+                  <hr />
+                  <ul>
+                    <li className="check">Website development</li>
+                    <li classname="check">Mobile Responsive</li>
+                    <li>Includes Design</li>
+                    <li>SEO Friendly</li>
+                    <li>Web security</li>
+                    <li>Domain email setup</li>
+                    <li>Social Media setup</li>
+                    <li>Google My Business setup</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section className="packages centered">
-            <Popup
-              trigger={
-                <h3 id="development">
-                  Website Development and Redevelopment Packages
-                </h3>
-              }
-              modal
-              closeOnDocumentClick
-            >
-              <h1>Hi</h1>
-            </Popup>
+            <h4>Technologies Used</h4>
             <div className="grid">
               <div>
                 <img

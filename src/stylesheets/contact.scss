@@ -1,0 +1,30 @@
+@import "variables";
+
+.contact {
+  .contact_section {
+    padding: 0 5%;
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+  }
+  #name,
+  #email,
+  #message {
+    border-width: 0 0 1px 0;
+    border-color: $purpleblue;
+    margin: 15px;
+    padding: 3%;
+  }
+
+  #message {
+    width: 80%;
+  }
+
+  #submit {
+    border: none;
+    display: block;
+    margin-top: 5%;
+    color: white;
+  }
+}
