@@ -6,10 +6,9 @@ import Projects from "./components/Projects";
 import Articles from "./components/Articles";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-
-import "./stylesheets/App.scss";
 import Footer from "./layout/Footer";
 
+import "./stylesheets/App.scss";
 class App extends Component {
   render() {
     return (

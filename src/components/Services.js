@@ -10,8 +10,6 @@ import {
   AccordionItemPanel
 } from "react-accessible-accordion";
 
-import "../stylesheets/services.scss";
-
 class Services extends Component {
   render() {
     return (
@@ -27,29 +25,71 @@ class Services extends Component {
             exactly the way you envision.
           </section>
 
-          <section className=" centered">
+          <section className=" package_type">
             <h3 id="development">
               Website Development and Redevelopment Packages
             </h3>
 
-            <div className="package_type">
+            <div className="grid">
               <div>
-                <div>
+                <div className="heading">
                   <h4>BASIC</h4>
                   <hr />
                 </div>
-                <div>
-                  <h5>1-3 pages</h5>
+                <div className="development_text">
+                  <h5 className="pages">1-3 pages</h5>
                   <hr />
                   <ul>
                     <li className="check">Website development</li>
-                    <li classname="check">Mobile Responsive</li>
+                    <li className="check">Mobile Responsive</li>
                     <li>Includes Design</li>
                     <li>SEO Friendly</li>
                     <li>Web security</li>
                     <li>Domain email setup</li>
                     <li>Social Media setup</li>
                     <li>Google My Business setup</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <div className="heading">
+                  <h4>DELUXE</h4>
+                  <hr />
+                </div>
+                <div className="development_text">
+                  <h5 className="pages">1-5+ pages</h5>
+                  <hr />
+                  <ul>
+                    <li className="check">Website development</li>
+                    <li className="check">Mobile Responsive</li>
+                    <li className="check">Includes Design</li>
+                    <li className="check">SEO Friendly</li>
+                    <li>Web security</li>
+                    <li>Domain email setup</li>
+                    <li>Social Media setup</li>
+                    <li>Google My Business setup</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <div className="heading">
+                  <h4>PREMIUM</h4>
+                  <hr />
+                </div>
+                <div className="development_text">
+                  <h5 className="pages">1-5+ pages</h5>
+                  <hr />
+                  <ul>
+                    <li className="check">Website development</li>
+                    <li className="check">Mobile Responsive</li>
+                    <li className="check">Includes Design</li>
+                    <li className="check">SEO Friendly</li>
+                    <li className="check">Web security</li>
+                    <li className="check">Domain email setup</li>
+                    <li className="check">Social Media setup</li>
+                    <li className="check">Google My Business setup</li>
                   </ul>
                 </div>
               </div>

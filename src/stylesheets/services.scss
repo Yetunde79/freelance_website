@@ -1,5 +1,3 @@
-@import "variables";
-
 .service_text {
   width: 80%;
   padding-left: 10%;
@@ -24,12 +22,65 @@
   }
 }
 
+.package_type {
+  margin: 6%;
+
+  hr {
+    width: 100px;
+    margin-bottom: 0;
+    background-color: #353839;
+    height: 1px;
+    border: 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+  }
+  .heading {
+    text-align: center;
+    background-color: $midpurple;
+    padding: 35px;
+
+    h4 {
+      margin: 0;
+    }
+  }
+  .development_text {
+    background-color: $lightpurple;
+    padding: 15px;
+    h5 {
+      font-size: 16px;
+      font-size: 1.3vw;
+    }
+  }
+  .pages {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+  }
+  ul {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  li {
+    padding-left: 44px;
+    padding-top: 3px;
+    height: 40px;
+  }
+  .check {
+    background: url("../images/icons8-ok-32.png") no-repeat left top;
+  }
+}
+
 #development {
   text-align: left;
   padding-bottom: 3%;
   &:hover {
     text-decoration: underline;
-    color: $grey;
+    color: $lightpurple;
     cursor: pointer;
   }
 }

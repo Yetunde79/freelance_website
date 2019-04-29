@@ -3,9 +3,6 @@ import { NavLink, Link } from "react-router-dom";
 
 import logo from "../images/logo.png";
 
-import "../stylesheets/App.scss";
-import "../stylesheets/Home.scss";
-
 export default function Home() {
   const header = {
     heading:
@@ -42,7 +39,7 @@ export default function Home() {
           <h4>{header.subheading}</h4>
 
           <button className="btn">
-            <Link href="/services">LET'S WORK TOGETHER</Link>
+            <Link to="/services">LET'S WORK TOGETHER</Link>
           </button>
         </section>
       </header>
