@@ -1,0 +1,21 @@
+.projects {
+  padding: 0 5%;
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    div {
+      box-shadow: 0px 3px 7px grey;
+      text-align: center;
+      img {
+        width: 100%;
+        -webkit-filter: grayscale(50%);
+        filter: grayscale(50%);
+        &:hover {
+          filter: none;
+        }
+      }
+    }
+  }
+}
