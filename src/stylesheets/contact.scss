@@ -26,3 +26,14 @@
     color: white;
   }
 }
+
+@media all and (max-width: 660px) {
+  .contact .contact_section .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  #email,
+  #name {
+    width: 80%;
+  }
+}

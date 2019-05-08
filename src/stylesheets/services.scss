@@ -190,3 +190,35 @@
     opacity: 1;
   }
 }
+
+/* Small screens */
+@media all and (max-width: 660px) {
+  .package_type {
+    padding-bottom: 10%;
+    .grid {
+      @include mobile_grid;
+    }
+  }
+  .packages .grid {
+    @include mobile_grid;
+  }
+  .custom .grid {
+    @include mobile_grid;
+  }
+  .service_text {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+/* Medium screens */
+@media all and (min-width: 661px) and (max-width: 1100px) {
+  .package_type .grid {
+    gap: 30px;
+  }
+
+  .packages {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

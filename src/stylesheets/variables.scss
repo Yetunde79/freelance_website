@@ -29,3 +29,8 @@ $aqua: aquamarine;
   transform: skewY(3deg);
   transform-origin: 100% 0;
 }
+
+@mixin mobile_grid {
+  gap: 70px;
+  grid-template-columns: 300px;
+}

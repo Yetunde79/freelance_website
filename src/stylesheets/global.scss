@@ -2,6 +2,13 @@ section {
   margin: 6% 0;
 }
 
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 //FONTS
 
 h1 {
@@ -181,5 +188,15 @@ footer > p {
 
   p {
     font-size: 3.5vw;
+  }
+
+  footer {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      // grid-template-columns: 1fr 300px;
+    }
+    .footer-social {
+      grid-column: 1/-1;
+    }
   }
 }

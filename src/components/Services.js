@@ -25,7 +25,7 @@ class Services extends Component {
             exactly the way you envision.
           </section>
 
-          <section className=" package_type">
+          <section className=" package_type centered">
             <h3 id="development">
               Website Development and Redevelopment Packages
             </h3>
