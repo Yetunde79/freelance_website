@@ -9,6 +9,13 @@ import Contact from "./components/Contact";
 import Footer from "./layout/Footer";
 
 import "./stylesheets/App.scss";
+
+/*TODO
+1. Add all text
+
+2. Work on hamburger menu X
+
+*/
 class App extends Component {
   render() {
     return (

@@ -1,53 +1,49 @@
 .developed {
+  padding-bottom: 5%;
+
   h2 {
     text-align: left;
   }
-}
 
-.developed .grid {
-  grid-template-columns: minmax(100px, 300px) minmax(100px, 300px) minmax(
-      100px,
-      300px
-    );
-  gap: 25px;
+  .grid {
+    grid-template-columns: minmax(100px, 300px) minmax(100px, 300px) minmax(
+        100px,
+        300px
+      );
+    gap: 25px;
 
-  .grid-items {
-    border: 1px solid grey;
-  }
+    .grid-items {
+      border: 1px solid grey;
+    }
 
-  .developed-img {
-    display: flex;
-    justify-content: center;
-    padding: 10%;
-    background-color: $blue;
-    border: none;
-  }
+    .developed-img {
+      display: flex;
+      justify-content: center;
+      padding: 10%;
+      background-color: $blue;
+      border: none;
+    }
 
-  .developed-text {
-    margin: 5%;
+    .developed-text {
+      margin: 5%;
+    }
   }
 }
 
 //Featured Section
 .featured {
   @include slanted_left;
-  .grid {
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px 200px;
-    gap: 30px;
 
-    div {
-      background-color: white;
-      color: $purpleblue;
-      border-radius: 15px;
-    }
-  }
   &:before {
     @include slanted_left_before;
+  }
+  .grid {
+    padding-bottom: 5%;
   }
 }
 
 .testimonials {
+  padding-top: 5%;
   .grid {
     grid-template-columns: 250px 250px;
     gap: 80px;

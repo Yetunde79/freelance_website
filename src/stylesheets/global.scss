@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 section {
   margin: 6% 0;
 }
@@ -12,28 +16,28 @@ section {
 //FONTS
 
 h1 {
-  font-size: 40px;
-  font-size: 3.6vw;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-size: 30px;
-  font-size: 2.7vw;
+  font-size: 1.9em;
 }
 
 h3 {
-  font-size: 25px;
-  font-size: 2vw;
+  font-size: 1.6em;
 }
 
 h4 {
-  font-size: 18px;
-  font-size: 1.5vw;
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1.1em;
 }
 
 p {
-  font-size: 16px;
-  font-size: 1.3vw;
+  font-size: 1em;
+  line-height: 1.6;
 }
 
 //End of FONTS
@@ -44,7 +48,7 @@ img {
 }
 
 header {
-  background-image: url("../images/background2.svg");
+  background-image: url("../images/cool-background.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 5px 15px 5% 15px;
@@ -58,16 +62,22 @@ header {
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  ul {
+
+  .menu {
     display: flex;
     justify-content: flex-end;
-  }
-  li {
-    display: inline;
-    padding: 0 10px;
-    font-size: 14px;
+    li {
+      display: inline;
+      padding: 0 10px;
+      font-size: 14px;
+    }
   }
 }
+
+.hamburger {
+  padding-top: 10px;
+}
+
 .header-text {
   width: 70%;
   padding-left: 15%;
@@ -162,32 +172,27 @@ footer > p {
   }
 }
 
-@media all and (max-width: 660px) {
-  h1 {
-    font-size: 5vw;
-  }
-
-  h3 {
-    font-size: 4.5vw;
-  }
-
-  h4 {
-    font-size: 4vw;
-  }
-
-  p {
-    font-size: 2.6vw;
-  }
-}
-
 /* Small screens */
 @media all and (max-width: 500px) {
-  .menu {
-    flex-direction: column;
+  nav {
+    grid-template-columns: 1fr 150px;
+    .mobilemenu {
+      .hamburger {
+        float: right;
+      }
+      .menu {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        li {
+          padding-bottom: 5px;
+        }
+      }
+    }
   }
 
-  p {
-    font-size: 3.5vw;
+  .header-text {
+    padding-top: 10%;
   }
 
   footer {
