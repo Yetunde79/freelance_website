@@ -10,11 +10,10 @@ import Shopify from "../images/shopify.png";
 import Fylo from "../images/fylo.png";
 
 import ProjectItems from "../components/ProjectItems";
+import Header from "../layout/Header";
 
 export default class Home extends Component {
   state = {
-    windowWidth: window.innerWidth,
-    mobileNavVisible: false,
     projects: [
       {
         img: Aimient,
@@ -49,92 +48,17 @@ export default class Home extends Component {
     ]
   };
 
-  handleResize = () => {
-    this.setState({ windowWidth: window.innerWidth });
-  };
-
-  componentDidMount() {
-    window.addEventListener("resize", this.handleResize);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize);
-  }
-
-  navigationlink = () => {
-    return [
-      <ul className="menu">
-        <li>
-          <NavLink exact to="/">
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/projects">Projects</NavLink>
-        </li>
-        <li>
-          <NavLink to="/services">Services</NavLink>
-        </li>
-        {/* <li>
-<NavLink to="/articles">Articles</NavLink>
-</li> */}
-        <li>
-          <NavLink to="/contact">Contact</NavLink>
-        </li>
-      </ul>
-    ];
-  };
-
-  renderMobileNav = () => {
-    if (this.state.mobileNavVisible) {
-      return this.navigationlink();
-    }
-  };
-
-  handleNavLink = () => {
-    if (!this.state.mobileNavVisible) {
-      this.setState({ mobileNavVisible: true });
-    } else {
-      this.setState({ mobileNavVisible: false });
-    }
-  };
-
-  renderNavigation = () => {
-    if (this.state.windowWidth <= 500) {
-      return [
-        <div className="mobilemenu">
-          {this.renderMobileNav()}
-          <i className="fas fa-bars hamburger" onClick={this.handleNavLink} />
-        </div>
-      ];
-    } else {
-      return [<div>{this.navigationlink()}</div>];
-    }
-  };
-
   render() {
-    const header = {
-      heading:
-        "I develop websites that help small businesses grow and in a position to succeed",
-      subheading: "Front End Development"
-    };
-
     return (
       <div>
-        <header>
-          <nav>
-            <img src={logo} alt="logo" />
-            {this.renderNavigation()}
-          </nav>
-          <div className="header-text">
-            <h1 className="heading">{header.heading}</h1>
-            <h4>{header.subheading}</h4>
-
-            <button className="btn">
-              <Link to="/services">LET'S WORK TOGETHER</Link>
-            </button>
-          </div>
-        </header>
+        <Header
+          heading="I develop websites that help small businesses grow and in a position to succeed"
+          subheading="Front End Development"
+        >
+          <button className="btn">
+            <Link to="/services">LET'S WORK TOGETHER</Link>
+          </button>
+        </Header>
 
         <main>
           <section className="developed centered">
