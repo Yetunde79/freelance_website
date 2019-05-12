@@ -12,7 +12,6 @@ import "./stylesheets/App.scss";
 
 /*TODO
 1. Add all text
-2. Make services (working together) responsive
 */
 class App extends Component {
   render() {

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import uuid from "uuid";
+
 import "../stylesheets/App.scss";
 import logo from "../images/logo.png";
 
@@ -23,22 +25,22 @@ class Header extends Component {
 
   navigationlink = () => {
     return [
-      <ul className="menu">
-        <li>
+      <ul className="menu" key={uuid.v4()}>
+        <li key={uuid.v4()}>
           <NavLink exact to="/">
             Home
           </NavLink>
         </li>
-        <li>
+        <li key={uuid.v4()}>
           <NavLink to="/projects">Projects</NavLink>
         </li>
-        <li>
+        <li key={uuid.v4()}>
           <NavLink to="/services">Services</NavLink>
         </li>
         {/* <li>
-<NavLink to="/articles">Articles</NavLink>
-</li> */}
-        <li>
+          <NavLink to="/articles">Articles</NavLink>
+          </li> */}
+        <li key={uuid.v4()}>
           <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
@@ -62,13 +64,13 @@ class Header extends Component {
   renderNavigation = () => {
     if (this.state.windowWidth <= 500) {
       return [
-        <div className="mobilemenu">
+        <div className="mobilemenu" key={uuid.v4()}>
           {this.renderMobileNav()}
           <i className="fas fa-bars hamburger" onClick={this.handleNavLink} />
         </div>
       ];
     } else {
-      return [<div>{this.navigationlink()}</div>];
+      return [<div key={uuid.v4()}>{this.navigationlink()}</div>];
     }
   };
 
