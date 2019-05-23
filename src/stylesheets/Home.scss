@@ -17,7 +17,11 @@
     }
 
     .developed-img {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       padding: 10%;
       background-color: $blue;
@@ -37,6 +41,11 @@
   &:before {
     @include slanted_left_before;
   }
+
+  h3 {
+    color: $grey;
+  }
+
   .grid {
     padding-bottom: 5%;
   }

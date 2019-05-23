@@ -20,9 +20,21 @@ class Services extends Component {
         />
         <main>
           <section className="service_text">
-            I am your ongoing collobarator from website development to ongoing
-            maintenance. We will collaborate to bring your website to life
-            exactly the way you envision.
+            <p>
+              Currently 86% of business have a online presence. Sites like IMBD
+              have been around forever but it's sites like Amazon that have
+              changed the game forever.
+            </p>
+            <p>
+              Your business may be Amazon but through a strong online presence
+              your butinsee will get more attention from much larger audience
+              than you could ever reach without a website.
+            </p>
+            <p>
+              I am your ongoing collobarator from website development to ongoing
+              maintenance. We will collaborate to bring your website to life
+              exactly the way you envision.
+            </p>
           </section>
 
           <section className=" package_type centered">
@@ -97,7 +109,7 @@ class Services extends Component {
           </section>
 
           <section className="packages centered">
-            <h4>Technologies Used</h4>
+            <h3>Technologies Used</h3>
             <div className="grid">
               <div>
                 <img
@@ -130,7 +142,10 @@ class Services extends Component {
                       alt="code tags"
                     />
                     <h4>Custom Code</h4>
-                    <p>Building your website using HTML, CSS and JavaScript</p>
+                    <p>
+                      Building your website using HTML, CSS and JavaScript
+                      (React.js & Node.js)
+                    </p>
                   </div>
                 }
                 modal
@@ -188,14 +203,15 @@ class Services extends Component {
             <h3>The process for working together</h3>
             <div className="process-inline">
               <div>
-                <i className="far fa-edit fa-2x" />
                 <a href="https://yetundesolaadebayo.typeform.com/to/baXWvR">
+                  <i className="far fa-edit fa-2x" />
+
                   <p>Fill out the questionnaire</p>
                 </a>
               </div>
               <div>
-                <i className="far fa-calendar-alt fa-2x" />
                 <a href="https://calendly.com/ysolaadebayo">
+                  <i className="far fa-calendar-alt fa-2x" />
                   <p>Schedule a consultation</p>
                 </a>
               </div>

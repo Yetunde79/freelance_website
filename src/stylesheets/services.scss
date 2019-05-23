@@ -7,6 +7,9 @@
 
 .packages {
   @include slanted_left;
+  h3 {
+    color: $grey;
+  }
   .grid {
     grid-template-columns: minmax(200px, 300px) minmax(200px, 300px) minmax(
         200px,
@@ -46,11 +49,14 @@
 
     h4 {
       margin: 0;
+      color: $grey;
     }
   }
   .development_text {
-    background-color: $lightpurple;
+    background-color: white;
     padding: 15px;
+    border: 2px solid #a9a9a9;
+    border-top: none;
   }
   .pages {
     text-align: center;
@@ -108,7 +114,13 @@
 .process {
   @include slanted_left;
 
+  h3 {
+    color: $grey;
+  }
+
   .process-inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
     padding-top: 4%;
@@ -161,22 +173,35 @@
   margin-right: 12px;
   border-bottom: 2px solid currentColor;
   border-right: 2px solid currentColor;
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
 .accordion__button[aria-expanded="true"]::before,
 .accordion__button[aria-selected="true"]::before {
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .accordion__panel {
   padding: 20px;
+  -webkit-animation: fadein 0.35s ease-in;
   animation: fadein 0.35s ease-in;
 }
 
 /* -------------------------------------------------- */
 /* ---------------- Animation part ------------------ */
 /* -------------------------------------------------- */
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 @keyframes fadein {
   0% {
@@ -207,6 +232,9 @@
     padding-bottom: 5%;
   }
   .process .process-inline {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     div {
       padding-bottom: 40px;

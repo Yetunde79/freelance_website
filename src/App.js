@@ -12,6 +12,8 @@ import "./stylesheets/App.scss";
 
 /*TODO
 1. Add all text
+add link and open it in a diff page
+
 */
 class App extends Component {
   render() {
