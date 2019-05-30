@@ -54,7 +54,7 @@ export default class Projects extends Component {
   render() {
     const header = {
       heading: "PROJECTS",
-      subheading: "Lorem Ipsum"
+      subheading: "Solutions I have created"
     };
 
     return (

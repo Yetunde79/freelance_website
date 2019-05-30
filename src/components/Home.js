@@ -80,10 +80,8 @@ export default class Home extends Component {
                 <div className="developed-text">
                   <h4>Mobile Responsive</h4>
                   <p>
-                    Etiam imperdiet imperdiet orci. Fusce vulputate eleifend
-                    sapien. Ut non enim eleifend felis pretium feugiat. Praesent
-                    porttitor, nulla vitae posuere iaculis, arcu nisl dignissim
-                    dolor, a pretium mi sem ut ipsum.
+                    They are mobile-friendly and are responsive and readable on
+                    any device screen. From laptops & tablets to mobile.
                   </p>
                 </div>
               </div>
@@ -98,10 +96,8 @@ export default class Home extends Component {
                 <div className="developed-text">
                   <h4>Secure</h4>
                   <p>
-                    Etiam imperdiet imperdiet orci. Fusce vulputate eleifend
-                    sapien. Ut non enim eleifend felis pretium feugiat. Praesent
-                    porttitor, nulla vitae posuere iaculis, arcu nisl dignissim
-                    dolor, a pretium mi sem ut ipsum.
+                    All client websites are secured with an SSL certificate and
+                    all sensitive keys are kept hidden.
                   </p>
                 </div>
               </div>
@@ -113,10 +109,9 @@ export default class Home extends Component {
                 <div className="developed-text">
                   <h4>SEO Friendly</h4>
                   <p>
-                    Etiam imperdiet imperdiet orci. Fusce vulputate eleifend
-                    sapien. Ut non enim eleifend felis pretium feugiat. Praesent
-                    porttitor, nulla vitae posuere iaculis, arcu nisl dignissim
-                    dolor, a pretium mi sem ut ipsum.
+                    Consult with you, so your website is optimized with relevant
+                    keywords for maximum searchability and the text is
+                    structured in order of importance.
                   </p>
                 </div>
               </div>

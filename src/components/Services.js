@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Header from "../layout/Header";
-import Popup from "reactjs-popup";
 import { Link } from "react-router-dom";
 import {
   Accordion,
@@ -26,9 +25,9 @@ class Services extends Component {
               changed the game forever.
             </p>
             <p>
-              Your business may be Amazon but through a strong online presence
-              your butinsee will get more attention from much larger audience
-              than you could ever reach without a website.
+              Your business may not be Amazon but through a strong online
+              presence your business will get more attention from much larger
+              audience than you could ever reach without a website.
             </p>
             <p>
               I am your ongoing collobarator from website development to ongoing
@@ -134,56 +133,17 @@ class Services extends Component {
                 </p>
               </div>
 
-              <Popup
-                trigger={
-                  <div className="custom_code">
-                    <img
-                      src={require("../images/code-solid.svg")}
-                      alt="code tags"
-                    />
-                    <h4>Custom Code</h4>
-                    <p>
-                      Building your website using HTML, CSS and JavaScript
-                      (React.js & Node.js)
-                    </p>
-                  </div>
-                }
-                modal
-                closeOnDocumentClick
-              >
-                <div className="custom grid">
-                  <div>
-                    <h4>HTML and CSS</h4>
-                    <hr />
-                    <div>
-                      <p>
-                        Building the front-end of your website using these
-                        technologies
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <h4>HTML and CSS</h4>
-                    <hr />
-                    <div>
-                      <p>
-                        Building the front-end of your website using these
-                        technologies
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <h4>HTML and CSS</h4>
-                    <hr />
-                    <div>
-                      <p>
-                        Building the front-end of your website using these
-                        technologies
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Popup>
+              <div className="custom_code">
+                <img
+                  src={require("../images/code-solid.svg")}
+                  alt="code tags"
+                />
+                <h4>Custom Code</h4>
+                <p>
+                  Building your website using HTML, CSS and JavaScript (React.js
+                  & Node.js)
+                </p>
+              </div>
             </div>
           </section>
 
@@ -238,15 +198,16 @@ class Services extends Component {
                 <AccordionItem>
                   <AccordionItemHeading>
                     <AccordionItemButton>
-                      What harsh truths do you prefer to ignore?
+                      Why should I use your services to make my website?
                     </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
                     <p>
-                      Exercitation in fugiat est ut ad ea cupidatat ut in
-                      cupidatat occaecat ut occaecat consequat est minim minim
-                      esse tempor laborum consequat esse adipisicing eu
-                      reprehenderit enim.
+                      I’m a developer that not only works on the technical
+                      aspect of your website but consults with you so the
+                      business strategy is reflected on your site. Also, I
+                      guarantee clear communication throughout the whole
+                      process.
                     </p>
                   </AccordionItemPanel>
                 </AccordionItem>
@@ -254,14 +215,90 @@ class Services extends Component {
                 <AccordionItem>
                   <AccordionItemHeading>
                     <AccordionItemButton>
-                      Is free will real or just an illusion?
+                      How long will it take for my website to go live?
                     </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
                     <p>
-                      In ad velit in ex nostrud dolore cupidatat consectetur ea
-                      in ut nostrud velit in irure cillum tempor laboris sed
-                      adipisicing eu esse duis nulla non.
+                      In the first interview with me, I’ll try to learn as much
+                      as possible about your ideas and wishes; with as few
+                      phases as possible, we'll make the perfect site for you.
+                      How quickly we create your website depends on you: The
+                      faster we get all your information (e.g. for the contact
+                      page), your own text and pictures, the faster I can get
+                      started.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      How long does the contract last?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      The contract lasts till the project has been delivered to
+                      you or either party wants to end the contract.{" "}
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      Will I own all the project source files?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      Yes! You will have full access to everything I create
+                      along with all usage rights.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      How often do we get in touch once we are working together?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      Once a week, we will have a phone call discussing my
+                      progress and expected progress on your website for next
+                      week.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      Can you create an online store for me?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      Yes, I can create your online store with Shopify or
+                      Woocommerce.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      How can I start working with you?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      You can start working with me by filling out the
+                      questionnaire and scheduling a call to discuss your
+                      business.{" "}
                     </p>
                   </AccordionItemPanel>
                 </AccordionItem>
