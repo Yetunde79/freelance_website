@@ -1,20 +1,15 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import Articles from "./components/Articles";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Articles from "./pages/Articles";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 import Footer from "./layout/Footer";
 
 import "./stylesheets/App.scss";
 
-/*TODO
-1. Add all text
-add link and open it in a diff page
-
-*/
 class App extends Component {
   render() {
     return (

@@ -19,36 +19,42 @@ export default class Home extends Component {
         id: uuid.v4(),
         img: Aimient,
         name: "Aimient",
+        link: "https://aimient.com/",
         tagline: "A recruiting company"
       },
       {
         id: uuid.v4(),
         img: Jac9ja,
         name: "Jac9ja",
+        link: "https://jac9ja.ng/",
         tagline: "A blogging website"
       },
       {
         id: uuid.v4(),
         img: Shoot,
         name: "Shoot Technologies",
+        link: "https://condescending-williams-848ae0.netlify.com/",
         tagline: "A photography startup"
       },
       {
         id: uuid.v4(),
         img: Yettifood,
         name: "Yettifood",
+        link: "http://www.yettifood.com/",
         tagline: "A food blog website"
       },
       {
         id: uuid.v4(),
         img: Shopify,
         name: "Shopify",
+        link: "https://ljkhgfx.myshopify.com/",
         tagline: "A jewelry store"
       },
       {
         id: uuid.v4(),
         img: Fylo,
         name: "Fylo",
+        link: "https://yetunde79.github.io/fylo_landingpage/",
         tagline: "A landing page"
       }
     ]
@@ -126,6 +132,7 @@ export default class Home extends Component {
                   key={project.id}
                   img={project.img}
                   name={project.name}
+                  link={project.link}
                   tagline={project.tagline}
                 />
               ))}
@@ -160,12 +167,12 @@ export default class Home extends Component {
                     />
                     <div className="centered">
                       <p>
-                        Yetunde did a great job of helping me design and develop
-                        our company's website. She was well organized and quick
-                        to respond to asks and changes.
+                        I thoroughly enjoy my time working with Yetunde and came
+                        to know her as a truly valuable asset to absolutely any
+                        team. She is honest, dependable, and incredibly
+                        hard-working.
                       </p>
-                      <p>Ana Agneshwar</p>
-                      <p>CEO of Aimient</p>
+                      <p>Bernice Cantu</p>
                     </div>
                   </div>
                 </div>

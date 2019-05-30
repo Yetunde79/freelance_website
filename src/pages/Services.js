@@ -163,14 +163,22 @@ class Services extends Component {
             <h3>The process for working together</h3>
             <div className="process-inline">
               <div>
-                <a href="https://yetundesolaadebayo.typeform.com/to/baXWvR">
+                <a
+                  href="https://yetundesolaadebayo.typeform.com/to/baXWvR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="far fa-edit fa-2x" />
 
                   <p>Fill out the questionnaire</p>
                 </a>
               </div>
               <div>
-                <a href="https://calendly.com/ysolaadebayo">
+                <a
+                  href="https://calendly.com/ysolaadebayo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="far fa-calendar-alt fa-2x" />
                   <p>Schedule a consultation</p>
                 </a>
@@ -297,8 +305,23 @@ class Services extends Component {
                   <AccordionItemPanel>
                     <p>
                       You can start working with me by filling out the
-                      questionnaire and scheduling a call to discuss your
-                      business.{" "}
+                      <a
+                        href="https://yetundesolaadebayo.typeform.com/to/baXWvR"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {" "}
+                        questionnaire
+                      </a>{" "}
+                      and{" "}
+                      <a
+                        href="https://calendly.com/ysolaadebayo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        scheduling a call
+                      </a>{" "}
+                      to discuss your business.{" "}
                     </p>
                   </AccordionItemPanel>
                 </AccordionItem>
