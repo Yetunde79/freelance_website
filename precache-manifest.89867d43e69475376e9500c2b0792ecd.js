@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/fylo.ce657e8c.png"
   },
   {
-    "revision": "b18a10bcdcede91f5c93",
-    "url": "/static/css/main.ca187c13.chunk.css"
+    "revision": "41cd6729237d72f0acd2",
+    "url": "/static/css/main.0142dfec.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/shopify.0828ed6a.png"
   },
   {
-    "revision": "b18a10bcdcede91f5c93",
-    "url": "/static/js/main.64e5249a.chunk.js"
+    "revision": "41cd6729237d72f0acd2",
+    "url": "/static/js/main.e857ca4e.chunk.js"
   },
   {
     "revision": "446eaab8033e906b4b040bfcbfb2e7cd",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/party-popper.9ed28f4a.svg"
   },
   {
-    "revision": "d320d6b44d5e7c5f6d36d62468a84319",
+    "revision": "62e95d51d84efa8dd094e7ddf05f35fc",
     "url": "/index.html"
   }
 ];
