@@ -7,7 +7,7 @@ export default function Footer() {
     <footer>
       <div className="grid">
         <div>
-          <img src={require("../images/logo.png")} alt="logo" />
+          <a href="/"><img src={require("../images/logo.png")} alt="logo" /></a>
           <p>ysolaadebayo@gmail.com</p>
         </div>
 

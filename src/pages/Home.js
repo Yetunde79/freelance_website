@@ -64,7 +64,7 @@ export default class Home extends Component {
     return (
       <div>
         <Header
-          heading="I develop websites that help small businesses grow and in a position to succeed"
+          heading="I develop websites that put small businesses in a position to succeed"
           subheading="Front End Development"
         >
           <button className="btn">

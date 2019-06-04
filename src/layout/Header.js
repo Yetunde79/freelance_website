@@ -79,12 +79,14 @@ class Header extends Component {
     return (
       <header>
         <nav>
-          <img src={logo} alt="logo" />
+          <a href="/">
+            <img src={logo} alt="logo" />
+          </a>
           {this.renderNavigation()}
         </nav>
         <div className="header-text">
           <h1 className="heading">{heading}</h1>
-          <h4>{subheading}</h4>
+          <h4 className="subheading">{subheading}</h4>
 
           {this.props.children}
         </div>
