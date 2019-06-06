@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/static/media/fylo.ce657e8c.png"
   },
   {
-    "revision": "41cd6729237d72f0acd2",
-    "url": "/static/css/main.0142dfec.chunk.css"
+    "revision": "cde406420a26f602c7e7",
+    "url": "/static/css/main.0d3b391a.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "d808738cba16ae25efd7",
-    "url": "/static/js/2.484480c0.chunk.js"
+    "revision": "0bf4b0e9317fa497f9d5",
+    "url": "/static/js/2.bbbe6959.chunk.js"
   },
   {
     "revision": "fa6d5dc55d29be67447a1940c5601b22",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/shopify.0828ed6a.png"
   },
   {
-    "revision": "41cd6729237d72f0acd2",
-    "url": "/static/js/main.e857ca4e.chunk.js"
+    "revision": "cde406420a26f602c7e7",
+    "url": "/static/js/main.43ebb539.chunk.js"
   },
   {
     "revision": "446eaab8033e906b4b040bfcbfb2e7cd",
@@ -56,6 +56,10 @@ self.__precacheManifest = [
     "url": "/static/media/seo.ca71a2b8.svg"
   },
   {
+    "revision": "9ed28f4a7ec042febaa0772548690ead",
+    "url": "/static/media/party-popper.9ed28f4a.svg"
+  },
+  {
     "revision": "f6446bf3c9bf418b4c34473b94d5f4bd",
     "url": "/static/media/wordpress.f6446bf3.svg"
   },
@@ -68,11 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/code-solid.308e34d7.svg"
   },
   {
-    "revision": "9ed28f4a7ec042febaa0772548690ead",
-    "url": "/static/media/party-popper.9ed28f4a.svg"
-  },
-  {
-    "revision": "62e95d51d84efa8dd094e7ddf05f35fc",
+    "revision": "64b2683824d4005fa9405c8144505bbe",
     "url": "/index.html"
   }
 ];
