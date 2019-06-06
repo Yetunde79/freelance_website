@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -13,7 +13,7 @@ import "./stylesheets/App.scss";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter basename="/">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/working-with-me" component={Working} />
@@ -22,7 +22,7 @@ class App extends Component {
           <Route path="/contact" component={Contact} />
         </Switch>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
