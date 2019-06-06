@@ -7,7 +7,9 @@ export default function Footer() {
     <footer>
       <div className="grid">
         <div>
-          <a href="/"><img src={require("../images/logo.png")} alt="logo" /></a>
+          <a href="/">
+            <img src={require("../images/logo.png")} alt="logo" />
+          </a>
           <p>ysolaadebayo@gmail.com</p>
         </div>
 
@@ -18,6 +20,9 @@ export default function Footer() {
             </li>
             <li>
               <Link to="/projects">PROJECTS</Link>
+            </li>
+            <li>
+              <Link to="/working-with-me"> WORKING WITH ME</Link>
             </li>
             <li>
               <Link to="/services">SERVICES</Link>

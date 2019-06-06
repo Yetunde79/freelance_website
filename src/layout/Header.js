@@ -35,6 +35,9 @@ class Header extends Component {
           <NavLink to="/projects">Projects</NavLink>
         </li>
         <li key={uuid.v4()}>
+          <NavLink to="/working-with-me">Working with me</NavLink>
+        </li>
+        <li key={uuid.v4()}>
           <NavLink to="/services">Services</NavLink>
         </li>
         {/* <li>

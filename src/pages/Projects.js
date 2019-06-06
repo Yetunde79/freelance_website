@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import Header from "../layout/Header";
 import uuid from "uuid";
+import { Link } from "react-router-dom";
+
+import Header from "../layout/Header";
 import ProjectItems from "../components/ProjectItems";
 
 import Aimient from "../images/aimient.png";
@@ -86,6 +88,16 @@ export default class Projects extends Component {
         {/*<div className="centered">
               <button className="btn ">More Projects</button>
           </div> */}
+        <section className="next">
+          <Link to="/working-with-me">
+            <p>
+              Working with me
+              <span>
+                <i className="fas fa-arrow-right" />
+              </span>
+            </p>
+          </Link>
+        </section>
       </div>
     );
   }

@@ -85,7 +85,7 @@ nav {
     li {
       display: inline;
       padding: 0 10px;
-      font-size: 16px;
+      font-size: 12px;
     }
   }
 }
@@ -125,6 +125,27 @@ main {
   display: grid;
 }
 
+.next {
+  padding: 0 5%;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+
+  p {
+    font-size: 18px;
+  }
+  span {
+    padding-left: 10px;
+  }
+}
 footer {
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -215,6 +236,7 @@ footer > p {
         float: left;
         li {
           padding-bottom: 15px;
+          font-size: 10px;
         }
       }
     }

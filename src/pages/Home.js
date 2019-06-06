@@ -179,6 +179,17 @@ export default class Home extends Component {
               </div>
             </div>
           </section>
+
+          <section className="next">
+            <Link to="/projects">
+              <p>
+                Projects
+                <span>
+                  <i className="fas fa-arrow-right" />
+                </span>
+              </p>
+            </Link>
+          </section>
         </main>
       </div>
     );
