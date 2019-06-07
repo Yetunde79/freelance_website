@@ -4,6 +4,10 @@ import Header from "../layout/Header";
 import { Link } from "react-router-dom";
 
 class Services extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div>
@@ -101,55 +105,15 @@ class Services extends Component {
             </div>
           </section>
 
-          <section className="packages centered">
-            <h3>Technologies Used</h3>
-            <div className="grid">
-              <div>
-                <img
-                  src={require("../images/wordpress.svg")}
-                  alt="wordpress logo"
-                />
-                <h4>WordPress</h4>
-                <p>
-                  Building your website by customizing themes and leveraging
-                  plugins
-                </p>
-              </div>
-              <div>
-                <img
-                  src={require("../images/shopify.svg")}
-                  alt="shopify logo"
-                />
-                <h4>Shopify</h4>
-                <p>
-                  Building your store by customizing Liquid and using Shopify
-                  apps.
-                </p>
-              </div>
-
-              <div className="custom_code">
-                <img
-                  src={require("../images/code-solid.svg")}
-                  alt="code tags"
-                />
-                <h4>Custom Code</h4>
-                <p>
-                  Building your website using HTML, CSS and JavaScript (React.js
-                  & Node.js)
-                </p>
-              </div>
-            </div>
-          </section>
-
           <section className="maintenance section_padding">
             <h4>Website Maintenance</h4>
             <h4>$150</h4>
             <p>
-              A montly retainer to take care of any coding, tech or maintenance
+              A monthly retainer to take care of any coding, tech or maintenance
               for up to 4 hours a month. You can also let the months rollover
-              for that minor update. You have the option to have me take care of
-              your site long-term, so that you have more time for what really
-              matters - your business.
+              for that minor update. You also have the option to have me take
+              care of your site long-term, so that you have more time for what
+              really matters - your business.
             </p>
           </section>
         </main>

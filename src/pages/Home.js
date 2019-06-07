@@ -1,64 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import uuid from "uuid";
 
-import Aimient from "../images/aimient.png";
-import Jac9ja from "../images/jac9ja.png";
-import Shoot from "../images/shoot.png";
-import Yettifood from "../images/yettifood.png";
-import Shopify from "../images/shopify.png";
-import Fylo from "../images/fylo.png";
-
-import ProjectItems from "../components/ProjectItems";
 import Header from "../layout/Header";
 
 export default class Home extends Component {
-  state = {
-    projects: [
-      {
-        id: uuid.v4(),
-        img: Aimient,
-        name: "Aimient",
-        link: "https://aimient.com/",
-        tagline: "A recruiting company"
-      },
-      {
-        id: uuid.v4(),
-        img: Jac9ja,
-        name: "Jac9ja",
-        link: "https://jac9ja.ng/",
-        tagline: "A blogging website"
-      },
-      {
-        id: uuid.v4(),
-        img: Shoot,
-        name: "Shoot Technologies",
-        link: "https://condescending-williams-848ae0.netlify.com/",
-        tagline: "A photography startup"
-      },
-      {
-        id: uuid.v4(),
-        img: Yettifood,
-        name: "Yettifood",
-        link: "http://www.yettifood.com/",
-        tagline: "A food blog website"
-      },
-      {
-        id: uuid.v4(),
-        img: Shopify,
-        name: "Shopify",
-        link: "https://ljkhgfx.myshopify.com/",
-        tagline: "A jewelry store"
-      },
-      {
-        id: uuid.v4(),
-        img: Fylo,
-        name: "Fylo",
-        link: "https://yetunde79.github.io/fylo_landingpage/",
-        tagline: "A landing page"
-      }
-    ]
-  };
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 
   render() {
     return (
@@ -68,7 +16,7 @@ export default class Home extends Component {
           subheading="Front End Development"
         >
           <button className="btn">
-            <Link to="/services">LET'S WORK TOGETHER</Link>
+            <Link to="/working-with-me">LET'S WORK TOGETHER</Link>
           </button>
         </Header>
 
@@ -124,18 +72,43 @@ export default class Home extends Component {
             </div>
           </section>
 
-          <section className="projects featured centered">
-            <h3>Featured Projects</h3>
+          <section className="packages centered">
+            <h3>Technologies Used</h3>
             <div className="grid">
-              {this.state.projects.map(project => (
-                <ProjectItems
-                  key={project.id}
-                  img={project.img}
-                  name={project.name}
-                  link={project.link}
-                  tagline={project.tagline}
+              <div>
+                <img
+                  src={require("../images/wordpress.svg")}
+                  alt="wordpress logo"
                 />
-              ))}
+                <h4>WordPress</h4>
+                <p>
+                  Building your website by customizing themes and leveraging
+                  plugins
+                </p>
+              </div>
+              <div>
+                <img
+                  src={require("../images/shopify.svg")}
+                  alt="shopify logo"
+                />
+                <h4>Shopify</h4>
+                <p>
+                  Building your store by customizing Liquid and using Shopify
+                  apps.
+                </p>
+              </div>
+
+              <div className="custom_code">
+                <img
+                  src={require("../images/code-solid.svg")}
+                  alt="code tags"
+                />
+                <h4>Custom Code</h4>
+                <p>
+                  Building your website using HTML, CSS and JavaScript (React.js
+                  & Node.js)
+                </p>
+              </div>
             </div>
           </section>
 

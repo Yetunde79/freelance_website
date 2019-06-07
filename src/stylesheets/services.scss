@@ -84,6 +84,15 @@
   padding-bottom: 3%;
 }
 
+.maintenance {
+  @include slanted_left;
+  color: $grey;
+
+  &:before {
+    @include slanted_left_before;
+  }
+}
+
 .custom {
   padding: 0 5%;
 
