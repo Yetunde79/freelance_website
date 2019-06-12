@@ -130,6 +130,17 @@ class Working extends Component {
               <AccordionItem>
                 <AccordionItemHeading>
                   <AccordionItemButton>
+                    What programming language/technology will you use?
+                  </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                  <p>I'll use the best tool for the job.</p>
+                </AccordionItemPanel>
+              </AccordionItem>
+
+              <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton>
                     How often do we get in touch once we are working together?
                   </AccordionItemButton>
                 </AccordionItemHeading>

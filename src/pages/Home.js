@@ -34,8 +34,11 @@ export default class Home extends Component {
                 <div className="developed-text">
                   <h4>Mobile Responsive</h4>
                   <p>
-                    They are mobile-friendly and are responsive and readable on
-                    any device screen. From laptops & tablets to mobile.
+                    57% of internet users won't recommend a website with a
+                    poorly designed website on mobile. Give your customers the
+                    best experience possible and let me make your website
+                    mobile-friendly, responsive and readable on any device
+                    screen. From laptops & tablets to mobile.
                   </p>
                 </div>
               </div>
@@ -50,8 +53,9 @@ export default class Home extends Component {
                 <div className="developed-text">
                   <h4>Secure</h4>
                   <p>
-                    All client websites are secured with an SSL certificate and
-                    all sensitive keys are kept hidden.
+                    An unprotected website is a risk for your customers. Build
+                    trust with your clients by getting your website secured and
+                    keeping sensitive information discreet.
                   </p>
                 </div>
               </div>
@@ -63,9 +67,10 @@ export default class Home extends Component {
                 <div className="developed-text">
                   <h4>SEO Friendly</h4>
                   <p>
-                    Consult with you, so your website is optimized with relevant
-                    keywords for maximum searchability and the text is
-                    structured in order of importance.
+                    You want your website in the eyes of potential clients! By
+                    using specific keywords in your industry, blogging and
+                    optimizing your website, your chances of getting more sales
+                    and ranked higher on google are increased.
                   </p>
                 </div>
               </div>
@@ -82,8 +87,9 @@ export default class Home extends Component {
                 />
                 <h4>WordPress</h4>
                 <p>
-                  Building your website by customizing themes and leveraging
-                  plugins
+                  30% of the web is powered by WordPress. Used to create
+                  flexible websites with lower setup costs that you can easily
+                  update.
                 </p>
               </div>
               <div>
@@ -93,8 +99,9 @@ export default class Home extends Component {
                 />
                 <h4>Shopify</h4>
                 <p>
-                  Building your store by customizing Liquid and using Shopify
-                  apps.
+                  Used to create your eCommerce store that can be customized to
+                  your business using custom themes and apps. You can easily
+                  analyze your sales using the built-in dashboard.
                 </p>
               </div>
 
@@ -105,8 +112,9 @@ export default class Home extends Component {
                 />
                 <h4>Custom Code</h4>
                 <p>
-                  Building your website using HTML, CSS and JavaScript (React.js
-                  & Node.js)
+                  For when you want custom, scalable solutions from scratch. I
+                  can build your website using HTML, CSS, and JavaScript
+                  (React.js & Node.js)
                 </p>
               </div>
             </div>

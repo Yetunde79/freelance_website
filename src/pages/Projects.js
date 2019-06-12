@@ -46,7 +46,7 @@ export default class Projects extends Component {
       {
         id: uuid.v4(),
         img: Shopify,
-        name: "Shopify",
+        name: "Shopify Store",
         link: "https://ljkhgfx.myshopify.com/",
         tagline: "A jewelry store"
       },

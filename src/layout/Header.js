@@ -1,14 +1,28 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import uuid from "uuid";
+import { fadeInDown, slideInDown } from "react-animations";
 
+import styled, { keyframes } from "styled-components";
 import "../stylesheets/App.scss";
 import logo from "../images/logo.png";
+
+const fadeAnimation = keyframes`${fadeInDown}`;
+const slideAnimation = keyframes`${slideInDown}`;
+
+const FadeDiv = styled.div`
+  animation: 1s ${fadeAnimation};
+`;
+
+const SlideDiv = styled.div`
+  animation: 1s ${slideAnimation};
+`;
 
 class Header extends Component {
   state = {
     windowWidth: window.innerWidth,
-    mobileNavVisible: false
+    mobileNavVisible: false,
+    closeButton: false
   };
 
   handleResize = () => {
@@ -58,18 +72,34 @@ class Header extends Component {
 
   handleNavLink = () => {
     if (!this.state.mobileNavVisible) {
-      this.setState({ mobileNavVisible: true });
-    } else {
-      this.setState({ mobileNavVisible: false });
+      this.setState({ mobileNavVisible: true, closeButton: true });
     }
+  };
+
+  closeNav = () => {
+    this.setState({ mobileNavVisible: false, closeButton: false });
   };
 
   renderNavigation = () => {
     if (this.state.windowWidth <= 500) {
       return [
-        <div className="mobilemenu" key={uuid.v4()}>
-          {this.renderMobileNav()}
-          <i className="fas fa-bars hamburger" onClick={this.handleNavLink} />
+        <div key={uuid.v4()}>
+          <i
+            className="fas fa-bars fa-2x hamburger"
+            onClick={this.handleNavLink}
+          />
+
+          <div className="overlay mobilemenu" id="myNav">
+            <FadeDiv>
+              {this.renderMobileNav()}
+              {this.state.closeButton ? (
+                <i
+                  className="fas fa-times fa-2x close"
+                  onClick={this.closeNav}
+                />
+              ) : null}
+            </FadeDiv>
+          </div>
         </div>
       ];
     } else {
@@ -87,11 +117,14 @@ class Header extends Component {
           </a>
           {this.renderNavigation()}
         </nav>
-        <div className="header-text">
-          <h1 className="heading">{heading}</h1>
-          <h4 className="subheading">{subheading}</h4>
 
-          {this.props.children}
+        <div className="header-text">
+          <SlideDiv>
+            <h1 className="heading">{heading}</h1>
+            <h4 className="subheading">{subheading}</h4>
+
+            {this.props.children}
+          </SlideDiv>
         </div>
       </header>
     );

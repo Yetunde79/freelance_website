@@ -13,24 +13,24 @@ class Services extends Component {
       <div>
         <Header
           heading="SERVICES"
-          subheading="Development services that solve real business problems"
+          subheading="Finally launch your website and start making more sales"
         />
         <main>
           <section className="service_text">
             <p>
-              Currently 86% of business have a online presence. Sites like IMBD
+              Currently 86% of business have an online presence. Sites like IMBD
               have been around forever but it's sites like Amazon that have
               changed the game forever.
             </p>
             <p>
               Your business may not be Amazon but through a strong online
-              presence your business will get more attention from much larger
+              presence, your business will get more attention from a much larger
               audience than you could ever reach without a website.
             </p>
             <p>
               I am your ongoing collobarator from website development to ongoing
-              maintenance. We will collaborate to bring your website to life
-              exactly the way you envision.
+              maintenance. We will work together to bring your website to life
+              the way you envision.
             </p>
           </section>
 
@@ -51,12 +51,13 @@ class Services extends Component {
                   <ul>
                     <li className="check">Website development</li>
                     <li className="check">Mobile Responsive</li>
-                    <li>Includes Design</li>
+                    <li className="check">Includes Design</li>
                     <li>SEO Friendly</li>
                     <li>Web security</li>
                     <li>Domain email setup</li>
                     <li>Social Media setup</li>
                     <li>Google My Business setup</li>
+                    <li>Google Analytics and Ads setup</li>
                   </ul>
                 </div>
               </div>
@@ -78,6 +79,7 @@ class Services extends Component {
                     <li>Domain email setup</li>
                     <li>Social Media setup</li>
                     <li>Google My Business setup</li>
+                    <li>Google Analytics and Ads setup</li>
                   </ul>
                 </div>
               </div>
@@ -99,6 +101,7 @@ class Services extends Component {
                     <li className="check">Domain email setup</li>
                     <li className="check">Social Media setup</li>
                     <li className="check">Google My Business setup</li>
+                    <li className="check">Google Analytics and Ads setup</li>
                   </ul>
                 </div>
               </div>
