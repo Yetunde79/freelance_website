@@ -8,7 +8,7 @@ import ProjectItems from "../components/ProjectItems";
 import Aimient from "../images/aimient.png";
 import Jac9ja from "../images/jac9ja.png";
 import Shoot from "../images/shoot.png";
-import Yettifood from "../images/yettifood.png";
+import Yettifood from "../images/yettifood.jpg";
 import Shopify from "../images/shopify.png";
 import Fylo from "../images/fylo.png";
 
