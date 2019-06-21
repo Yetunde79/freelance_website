@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/yettifood.5857d0ac.jpg"
   },
   {
-    "revision": "6bd5140290b83a279020",
-    "url": "/static/css/main.a608cf01.chunk.css"
+    "revision": "4cefea14d5a8eccfc729",
+    "url": "/static/css/main.8a1d5269.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/shoot.b655fe98.png"
   },
   {
-    "revision": "6bd5140290b83a279020",
-    "url": "/static/js/main.f9b65a92.chunk.js"
+    "revision": "4cefea14d5a8eccfc729",
+    "url": "/static/js/main.bdc9812c.chunk.js"
   },
   {
     "revision": "0828ed6a85329f67637d719cacd21a84",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/party-popper.e2f2271b.svg"
   },
   {
-    "revision": "c0765dad5a0b5026c9222cbced8903e5",
+    "revision": "82c3d8491060d2569f20f57a740c41c6",
     "url": "/index.html"
   }
 ];
