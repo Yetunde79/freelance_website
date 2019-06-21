@@ -14,7 +14,7 @@ class Contact extends Component {
           <div className="contact_section">
             <form
               method="POST"
-              action="https://formspree.io/ysolaadebayo@gmail.com"
+              action="https://formspree.io/yetundesadebayo@gmail.com"
             >
               <div className="grid">
                 <input type="text" name="name" id="name" placeholder="Name" />

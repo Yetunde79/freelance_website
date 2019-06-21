@@ -51,7 +51,7 @@ class Services extends Component {
                   <ul>
                     <li className="check">Website development</li>
                     <li className="check">Mobile Responsive</li>
-                    <li className="check">Includes Design</li>
+                    <li>Includes Design</li>
                     <li>SEO Friendly</li>
                     <li>Web security</li>
                     <li>Domain email setup</li>
